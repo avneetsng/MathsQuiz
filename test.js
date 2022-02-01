@@ -59,7 +59,7 @@ const timer = setInterval(() => {
 
 function quizbackend()
 {
-    userAns = userAnsTextBox.value.toFixed(2)
+    userAns = parseInt(userAnsTextBox.value).toFixed(2)
     userAnsTextBox.value = ""
 
     if (userAns == answer && time!= 0 ) {
